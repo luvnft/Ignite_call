@@ -15,6 +15,10 @@ export function buildNextAuthOptions(
         clientSecret: process.env.GOOGLE_CLIENT_SECRET ?? '',
         authorization: {
           params: {
+            // Pedir para o usuario se logar sempre que entrar de novo na aplicacao para resetar o refresh token
+            prompt: 'consent',
+            access_type: 'offline',
+            response_type: 'code',
             // Scope significa qual aplicacao ou informacao queremos ter permissao do usuario
             scope:
               'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/calendar',
