@@ -11,17 +11,17 @@ export default function Home() {
   return (
     <>
       <NextSeo
-        title="Descomplique sua agenda | Ignite Call"
-        description="Conecte seu calendário e permita que as pessoas marquem agendamentos no seu tempo livre."
+        title="Uncomplicate your scheduling | Arvrtise Call"
+        description="Connect your calendar and allow people to schedule appointments in their free time. "
       />
       <Container>
         <Hero>
           <Heading as="h1" size="4xl">
-            Agendamento descomplicado
+            Uncomplicated Scheduled Scheduling
           </Heading>
           <Text size="xl">
-            Conecte seu calendário e permita que as pessoas marquem agendamentos
-            no seu tempo livre.
+            Connect your calendar and allow people to schedule appointments in
+            their free time. No pressure.
           </Text>
 
           <ClaimUsernameForm />
@@ -33,7 +33,7 @@ export default function Home() {
             height={400}
             quality={100}
             priority
-            alt="Calendário simbolizando aplicação em funcionamento"
+            alt="Arvrtise Call"
           />
         </Preview>
       </Container>

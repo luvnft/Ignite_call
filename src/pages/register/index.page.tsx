@@ -71,10 +71,10 @@ export default function Register() {
 
       <Container>
         <Header>
-          <Heading as="strong">Bem-vindo ao Ignite Call!</Heading>
+          <Heading as="strong">Welcome to Arvrtise Cal!</Heading>
           <Text>
-            Precisamos de algumas informações para criar seu perfil! Ah, você
-            pode pode editar essas informações depois.
+            We need some information to create your profile! Oh, you can edit
+            this information later.
           </Text>
 
           <MultiStep size={4} currentStep={1} />
@@ -82,10 +82,10 @@ export default function Register() {
 
         <Form as="form" onSubmit={handleSubmit(handleRegister)}>
           <label>
-            <Text size="sm">Nome de usuário</Text>
+            <Text size="sm">Username</Text>
             <TextInput
-              prefix="ignite.com/"
-              placeholder="seu-usuário"
+              prefix="cal.arvrtise.com/"
+              placeholder="Dr. Candy"
               {...register('username')}
             />
 
@@ -95,7 +95,7 @@ export default function Register() {
           </label>
 
           <label>
-            <Text size="sm">Nome completo</Text>
+            <Text size="sm">Full name</Text>
             <TextInput placeholder="Seu nome" {...register('name')} />
 
             {errors.name && (
@@ -104,7 +104,7 @@ export default function Register() {
           </label>
 
           <Button type="submit" disabled={isSubmitting}>
-            Próximo passo
+            Next step
             <ArrowRight />
           </Button>
         </Form>

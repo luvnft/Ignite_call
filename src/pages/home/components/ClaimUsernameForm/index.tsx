@@ -41,12 +41,12 @@ export function ClaimUsernameForm() {
       <Form as="form" onSubmit={handleSubmit(handleClaimUsername)}>
         <TextInput
           size="sm"
-          prefix="ignite.com/"
-          placeholder="seu-usuário"
+          prefix="cal.arvrtise.com/"
+          placeholder="Dr.Candy"
           {...register('username')}
         />
         <Button size="sm" type="submit" disabled={isSubmitting}>
-          Reservar
+          Book
           <ArrowRight />
         </Button>
       </Form>
@@ -58,7 +58,7 @@ export function ClaimUsernameForm() {
             {errors.username.message}
           </FormError>
         ) : (
-          <Text size="sm">Digite o nome do usuário desejado</Text>
+          <Text size="sm">Enter the desired username.</Text>
         )}
       </FormAnnotation>
     </>
